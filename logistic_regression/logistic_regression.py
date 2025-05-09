@@ -72,7 +72,7 @@ y = np.array([0, 0, 0, 1, 1, 1])
 # print("Accuracy on training set:", lr_model.score(X, y))
 
 w_init = np.zeros(X.shape[1])
-b_init = 0 
+b_init = 0
 
 w , b ,j_history = gf.gradient_descent(X , y, w_in=w_init , b_in=b_init ,alpha=0.01 , num_iters=10000)
 
